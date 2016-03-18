@@ -1,0 +1,59 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import "filetypes";
+
+.tree-view {
+
+  .file {
+    [data-name$=".css"]:before { .icon-css; }
+    [data-name$=".html"]:before { .icon-html; }
+    [data-name$=".htm"]:before { .icon-html; }
+    [data-name$=".js"]:before { .icon-js; }
+    [data-name$=".php"]:before { .icon-php; }
+    [data-name$=".py"]:before { .icon-python; }
+    [data-name$="Vagrantfile"]:before { .icon-vagrantfile; }
+    [data-name$=".less"]:before { .icon-less; }
+    [data-name$=".sass"]:before { .icon-sass; }
+    [data-name$=".scss"]:before { .icon-scss; }
+    [data-name$=".md"]:before { .icon-markdown; }
+    [data-name$=".rb"]:before { .icon-ruby; }
+    [data-name$="package.json"]:before { .icon-npm; }
+    [data-name$=".npmignore"]:before { .icon-npm; }
+    [data-name$="bower.json"]:before { .icon-bower; }
+    [data-name$=".bowerrc"]:before { .icon-bower; }
+
+    [data-name$=".gitignore"]:before { .icon-git; }
+    [data-name$=".gitattributes"]:before { .icon-git; }
+    [data-name$=".gitmodules"]:before { .icon-git; }
+
+    [data-name$=".hbs"]:before { .icon-handlebars; }
+    [data-name$=".handlebars"]:before { .icon-handlebars; }
+    [data-name$=".styl"]:before { .icon-stylus; }
+    [data-name$=".babelrc"]:before { .icon-babel; }
+    [data-name$=".sql"]:before { .icon-database; }
+    [data-name$=".twig"]:before { .icon-twig; }
+    [data-name$=".ts"]:before { .icon-typescript; }
+    [data-name$=".coffee"]:before { .icon-coffeescript; }
+    [data-name$=".sh"]:before { .icon-bash; }
+    [data-name$="composer.json"]:before { .icon-composer; }
+    [data-name^="Dockerfile"]:before { .icon-docker; }
+    [data-name$=".haml"]:before { .icon-haml; }
+    [data-name$=".jade"]:before { .icon-jade; }
+
+    [data-name^="shipitfile"][data-name$=".js"]:before { .icon-shipit; }
+
+  }
+
+  .directory {
+    [data-name$=".git"]:before { .icon-git; }
+    [data-name$=".meteor"]:before { .icon-meteor; }
+  }
+
+  .file, .directory {
+    span[data-name$="Gruntfile.js"]:before { .icon-grunt; }
+    span[data-name$="gulpfile.js"]:before { .icon-gulp; }
+  }
+
+}
