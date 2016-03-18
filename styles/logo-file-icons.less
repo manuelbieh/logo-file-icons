@@ -41,19 +41,20 @@
     [data-name^="Dockerfile"]:before { .icon-docker; }
     [data-name$=".haml"]:before { .icon-haml; }
     [data-name$=".jade"]:before { .icon-jade; }
+    [data-name$=".editorconfig"]:before { .icon-editorconfig; }
 
     [data-name^="shipitfile"][data-name$=".js"]:before { .icon-shipit; }
 
   }
 
   .directory {
-    [data-name$=".git"]:before { .icon-git; }
+    // [data-name$=".git"]:before { .icon-git; }
     [data-name$=".meteor"]:before { .icon-meteor; }
   }
 
   .file, .directory {
     span[data-name$="Gruntfile.js"]:before { .icon-grunt; }
-    span[data-name$="gulpfile.js"]:before { .icon-gulp; }
+    span[data-name^="gulpfile"]:before { .icon-gulp; }
   }
 
 }
