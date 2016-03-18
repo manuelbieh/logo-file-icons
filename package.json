@@ -2,9 +2,10 @@
   "name": "logo-file-icons",
   "version": "0.0.0",
   "description": "A short description of your package",
+  "author": "Manuel Bieh",
   "keywords": [
   ],
-  "repository": "https://github.com/atom/logo-file-icons",
+  "repository": "https://github.com/manuelbieh/logo-file-icons",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
