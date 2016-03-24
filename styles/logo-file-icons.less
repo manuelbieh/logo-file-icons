@@ -4,61 +4,113 @@
 // for a full listing of what's available.
 @import "filetypes";
 
-.tree-view {
+.tab {
 
-  .file {
-    [data-name$=".css"]:before { .icon-css; }
-    [data-name$=".html"]:before { .icon-html; }
-    [data-name$=".htm"]:before { .icon-html; }
-    [data-name$=".js"]:before { .icon-js; }
-    [data-name$=".php"]:before { .icon-php; }
-    [data-name$=".py"]:before { .icon-python; }
-    [data-name$="Vagrantfile"]:before { .icon-vagrantfile; }
-    [data-name$=".less"]:before { .icon-less; }
-    [data-name$=".sass"]:before { .icon-sass; }
-    [data-name$=".scss"]:before { .icon-scss; }
-    [data-name$=".md"]:before { .icon-markdown; }
-    [data-name$=".rb"]:before { .icon-ruby; }
-    [data-name$="package.json"]:before { .icon-npm; }
-    [data-name$=".npmignore"]:before { .icon-npm; }
-    [data-name$="bower.json"]:before { .icon-bower; }
-    [data-name$=".bowerrc"]:before { .icon-bower; }
+  .title {
 
-    [data-name$=".gitignore"]:before { .icon-git; }
-    [data-name$=".gitattributes"]:before { .icon-git; }
-    [data-name$=".gitmodules"]:before { .icon-git; }
-
-    [data-name$=".hbs"]:before { .icon-handlebars; }
-    [data-name$=".handlebars"]:before { .icon-handlebars; }
-    [data-name$=".styl"]:before { .icon-stylus; }
-    [data-name$=".babelrc"]:before { .icon-babel; }
-    [data-name$=".sql"]:before { .icon-database; }
-    [data-name$=".twig"]:before { .icon-twig; }
-    [data-name$=".ts"]:before { .icon-typescript; }
-    [data-name$=".coffee"]:before { .icon-coffeescript; }
-    [data-name$=".sh"]:before { .icon-bash; }
-    [data-name$="composer.json"]:before { .icon-composer; }
-    [data-name^="Dockerfile"]:before { .icon-docker; }
-    [data-name$=".haml"]:before { .icon-haml; }
-    [data-name$=".jade"]:before { .icon-jade; }
-    [data-name$=".editorconfig"]:before { .icon-editorconfig; }
-    [data-name$=".java"]:before { .icon-java; }
-    [data-name$=".jar"]:before { .icon-java; }
-    [data-name$=".svg"]:before { .icon-svg; }
-    [data-name$=".go"]:before { .icon-go; }
-
-    [data-name^="shipitfile"][data-name$=".js"]:before { .icon-shipit; }
+    &:before {
+      content: "";
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      vertical-align: -4px;
+      margin-right: 4px;
+    }
 
   }
+
+}
+
+.tab,
+.tree-view .file {
+
+  [data-name$=".css"]:before { .logo-icon(css); }
+  [data-name$=".html"]:before { .logo-icon(html5); }
+  [data-name$=".htm"]:before { .logo-icon(html5); }
+
+  [data-name$=".js"]:before { .logo-icon(javascript); }
+  [data-name$=".es6"]:before { .logo-icon(javascript); }
+
+  [data-name$=".php"]:before { .logo-icon(php2); }
+  [data-name$=".py"]:before { .logo-icon(python); }
+  [data-name$="Vagrantfile"]:before { .logo-icon(vagrant); }
+  [data-name$=".less"]:before { .logo-icon(less); }
+  [data-name$=".sass"]:before { .logo-icon(sass); }
+  [data-name$=".scss"]:before { .logo-icon(sass); }
+  [data-name$=".md"]:before { .logo-icon(markdown); }
+  [data-name$=".rb"]:before { .logo-icon(ruby); }
+  [data-name$=".npmignore"]:before { .logo-icon(npm); }
+  [data-name$=".bowerrc"]:before { .logo-icon(bower); }
+
+  [data-name$=".gitignore"]:before { .logo-icon(git); }
+  [data-name$=".gitattributes"]:before { .logo-icon(git); }
+  [data-name$=".gitmodules"]:before { .logo-icon(git); }
+
+  [data-name$=".hbs"]:before { .logo-icon(handlebars); }
+  [data-name$=".handlebars"]:before { .logo-icon(handlebars); }
+  [data-name$=".styl"]:before { .logo-icon(stylus); }
+  [data-name$=".babelrc"]:before { .logo-icon(babel); }
+  [data-name$=".sql"]:before { .logo-icon(database); }
+  [data-name$=".twig"]:before { .logo-icon(twig); }
+  [data-name$=".ts"]:before { .logo-icon(typescript); }
+  [data-name$=".coffee"]:before { .logo-icon(coffeescript); }
+
+  [data-name$=".sh"]:before { .logo-icon(bash); }
+  [data-name$=".bashrc"]:before { .logo-icon(bash); }
+  [data-name$=".bashprofile"]:before { .logo-icon(bash); }
+
+  [data-name^="Dockerfile"]:before { .logo-icon(docker); }
+  [data-name^=".dockerignore"]:before { .logo-icon(docker); }
+
+  [data-name$=".haml"]:before { .logo-icon(haml); }
+  [data-name$=".jade"]:before { .logo-icon(jade); }
+  [data-name$=".editorconfig"]:before { .logo-icon(editorconfig); }
+  [data-name$=".java"]:before { .logo-icon(java); }
+  [data-name$=".jar"]:before { .logo-icon(java); }
+  [data-name$=".svg"]:before { .logo-icon(svg); }
+  [data-name$=".go"]:before { .logo-icon(go); }
+  [data-name$=".json"]:before { .logo-icon(json); }
+  [data-name$=".json5"]:before { .logo-icon(json); }
+  [data-name$=".pl"]:before { .logo-icon(perl); }
+  [data-name$="nodemon.json"]:before { .logo-icon(nodemon); }
+  [data-name$=".postcss"]:before { .logo-icon(postcss); }
+  [data-name$=".dart"]:before { .logo-icon(dart); }
+  [data-name$=".erl"]:before { .logo-icon(erlang); }
+  [data-name$=".clj"]:before { .logo-icon(clojure); }
+  [data-name$=".cljs"]:before { .logo-icon(cljs); }
+
+  [data-name$=".hx"]:before { .logo-icon(haxe); }
+
+  [data-name$=".haxe"]:before { .logo-icon(haxe); }
+  [data-name$=".hxsl"]:before { .logo-icon(haxe); }
+
+  [data-name$=".lua"]:before { .logo-icon(lua); }
+  [data-name$=".hsl"]:before { .logo-icon(haskell); }
+
+  [data-name$=".deb"]:before { .logo-icon(debian); }
+
+  [data-name^="shipitfile"][data-name$=".js"]:before { .logo-icon(shipit); }
+  [data-name^=".travis"]:before { .logo-icon(travis-ci); }
+
+  [data-name^=".npmignore"]:before { .logo-icon(npm); }
+  span[data-name$="package.json"]:before { .logo-icon(npm); }
+
+  span[data-name$="bower.json"]:before { .logo-icon(bower); }
+  span[data-name$="composer.json"]:before { .logo-icon(composer); }
+  span[data-name$="Gruntfile.js"]:before { .logo-icon(grunt); }
+  span[data-name^="Gulpfile"]:before { .logo-icon(gulp); }
+  span[data-name^="gulpfile"]:before { .logo-icon(gulp); }
+
+}
+
+.tree-view {
 
   .directory {
     // [data-name$=".git"]:before { .icon-git; }
-    [data-name$=".meteor"]:before { .icon-meteor; }
-  }
-
-  .file, .directory {
-    span[data-name$="Gruntfile.js"]:before { .icon-grunt; }
-    span[data-name^="gulpfile"]:before { .icon-gulp; }
+    [data-name$=".meteor"]:before { .logo-icon(meteor); }
+    span[data-name$="Gruntfile.js"]:before { .logo-icon(grunt); }
+    span[data-name^="gulpfile"]:before { .logo-icon(gulp); }
+    span[data-name^="Gulpfile"]:before { .logo-icon(gulp); }
   }
 
 }

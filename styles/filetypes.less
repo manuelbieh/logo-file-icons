@@ -1,68 +1,11 @@
-.logo-file-icon {
+.logo-icon-defaults {
   background-size: contain;
   background-position: center;
   background-repeat:  no-repeat;
   font-size: 0;
-  // content: "";
-  // height: 26px !important;
 }
-.icon(@filename) {
-  .logo-file-icon;
+
+.logo-icon(@filename) {
+  .logo-icon-defaults;
   background-image: url("atom://logo-file-icons/icons/@{filename}.svg");
-}
-
-.icon-css { .icon(css); }
-.icon-html { .icon(html5); }
-.icon-vagrantfile { .icon(vagrant); }
-.icon-python { .icon(python); }
-.icon-less { .icon(less); }
-.icon-sass { .icon(sass); }
-.icon-scss { .icon(sass); }
-.icon-markdown { .icon(markdown); }
-.icon-npm { .icon(npm); }
-.icon-ruby { .icon(ruby); }
-.icon-bower { .icon(bower); }
-.icon-git { .icon(git); }
-.icon-meteor { .icon(meteor); }
-.icon-database { .icon(database); }
-.icon-babel { .icon(babel); }
-.icon-twig { .icon(twig); }
-.icon-typescript { .icon(typescript); }
-.icon-coffeescript { .icon(coffeescript); }
-.icon-stylus { .icon(stylus); }
-.icon-gulp { .icon(gulp); }
-.icon-grunt { .icon(grunt); }
-.icon-composer { .icon(composer); }
-.icon-bash { .icon(bash); }
-.icon-docker { .icon(docker); }
-.icon-haml { .icon(haml); }
-.icon-jade { .icon(jade); }
-.icon-shipit { .icon(shipit); }
-.icon-editorconfig { .icon(editorconfig); }
-.icon-java { .icon(java); }
-.icon-svg { .icon(svg); }
-.icon-go { .icon(go); }
-
-.icon-handlebars { .icon(handlebars);
-  margin-left: -2px;
-  margin-right: 6px;
-}
-
-.icon-js {
-  .icon(javascript);
-  margin-left: -2px;
-  margin-right: 7px;
-}
-
-.icon-php {
-  .icon(php);
-  margin-left: -3px;
-  margin-right: 2px;
-  width: 22px;
-}
-
-.icon-docker {
-  width: 22px;
-  margin-left: -5px;
-  margin-right: 3px;
 }
