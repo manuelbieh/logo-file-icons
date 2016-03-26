@@ -4,26 +4,11 @@
 // for a full listing of what's available.
 @import "filetypes";
 
-// relative icon sizes
-// .list-group.list-group .icon::before,
-// .list-tree.list-tree .icon::before {
-//   height: 2em;
-// }
-//
-// .icon-file-text::before,
-// .icon-file-directory:before {
-//   // content: "";
-//   min-width: 16px;
-//   width: 1em;
-// }
-//
-// .tab [data-name]:before,
-// .tree-view .file [data-name]:before {
-//     font-size: inherit;
-// }
-//
-// .list-group .icon::before,
-// .list-tree .icon::before {}
+.icon-file-text::before,
+.icon-file-directory:before {
+  min-width: 16px;
+  width: 1em;
+}
 
 .tab {
 
@@ -33,7 +18,7 @@
       content: "";
       display: inline-block;
       width: 16px;
-      height: 16px;
+      height: 16px !important;
       vertical-align: -4px;
       margin-right: 4px;
     }
@@ -45,28 +30,50 @@
 .tab,
 .tree-view .file {
 
-  [data-name$=".css"]:before { .logo-icon(css); }
-  [data-name$=".html"]:before { .logo-icon(html5); }
+
+  [data-name$=".html"]:before,
   [data-name$=".htm"]:before { .logo-icon(html5); }
 
-  [data-name$=".js"]:before { .logo-icon(javascript); }
+  [data-name$=".js"]:before,
+  [data-name$=".es"]:before,
   [data-name$=".es6"]:before { .logo-icon(javascript); }
-  [data-name$=".json"]:before { .logo-icon(json); }
+
+  [data-name$=".css"]:before { .logo-icon(css); }
+  [data-name$=".jsx"]:before { .logo-icon(react); }
+
+  [data-name$=".json"]:before,
   [data-name$=".json5"]:before { .logo-icon(json); }
 
-  [data-name$=".gitignore"]:before { .logo-icon(git); }
-  [data-name$=".gitattributes"]:before { .logo-icon(git); }
-  [data-name$=".gitmodules"]:before { .logo-icon(git); }
+  [data-name^=".gitignore"]:before,
+  [data-name^=".gitconfig"]:before,
+  [data-name^=".gitkeep"]:before,
+  [data-name^=".gitattributes"]:before,
+  [data-name^=".gitmodules"]:before { .logo-icon(git); }
 
   [data-name$=".php"]:before { .logo-icon(php2); }
   [data-name$=".py"]:before { .logo-icon(python); }
   [data-name$=".less"]:before { .logo-icon(less); }
-  [data-name$=".sass"]:before { .logo-icon(sass); }
+
+  [data-name$=".sass"]:before,
   [data-name$=".scss"]:before { .logo-icon(sass); }
+
+  [data-name$=".mdown"]:before,
+  [data-name$=".markdown"]:before,
+  [data-name$=".mkd"]:before,
+  [data-name$=".mkdown"]:before,
   [data-name$=".md"]:before { .logo-icon(markdown); }
+
+  [data-name^="Gemfile"]:before,
+  [data-name^="Rakefile"]:before,
+  [data-name$=".rspec"]:before,
+  [data-name$=".rake"]:before,
+  [data-name$=".erb"]:before,
   [data-name$=".rb"]:before { .logo-icon(ruby); }
-  [data-name$=".npmignore"]:before { .logo-icon(npm); }
+
   [data-name$=".bowerrc"]:before { .logo-icon(bower); }
+  [data-name^=".bootstraprc"]:before { .logo-icon(bootstrap); }
+
+  [data-name^="webpack.config"]:before { .logo-icon(webpack); }
 
   [data-name$=".hbs"]:before { .logo-icon(handlebars); }
   [data-name$=".handlebars"]:before { .logo-icon(handlebars); }
@@ -75,14 +82,20 @@
   [data-name$=".sql"]:before { .logo-icon(database); }
   [data-name$=".twig"]:before { .logo-icon(twig); }
   [data-name$=".ts"]:before { .logo-icon(typescript); }
-  [data-name$=".coffee"]:before { .logo-icon(coffeescript); }
 
-  [data-name$=".sh"]:before { .logo-icon(bash); }
-  [data-name$=".bashrc"]:before { .logo-icon(bash); }
-  [data-name$=".bash_profile"]:before { .logo-icon(bash); }
+  [data-name$=".coffee"]:before,
+  [data-name$=".cjsx"]:before { .logo-icon(coffeescript); }
 
   [data-name$="Vagrantfile"]:before { .logo-icon(vagrant); }
-  [data-name^="Dockerfile"]:before { .logo-icon(docker); }
+  [data-name$=".pp"]:before { .logo-icon(puppet); }
+  [data-name$="kitchen.yml"]:before { .logo-icon(chef); }
+
+  [data-name$=".sh"]:before,
+  [data-name$=".bashrc"]:before,
+  [data-name$=".bash_profile"]:before { .logo-icon(bash); }
+
+
+  [data-name^="Dockerfile"]:before,
   [data-name^=".dockerignore"]:before { .logo-icon(docker); }
 
   [data-name$=".haml"]:before { .logo-icon(haml); }
@@ -93,15 +106,23 @@
   [data-name$=".svg"]:before { .logo-icon(svg); }
   [data-name$=".go"]:before { .logo-icon(go); }
   [data-name$=".pl"]:before { .logo-icon(perl); }
+
+  [data-name$=".nodemonignore"]:before,
   [data-name$="nodemon.json"]:before { .logo-icon(nodemon); }
-  [data-name$=".postcss"]:before { .logo-icon(postcss); }
+
+  [data-name$=".postcss"]:before,
+  [data-name$=".sss"]:before { .logo-icon(postcss); }
+
   [data-name$=".dart"]:before { .logo-icon(dart); }
   [data-name$=".erl"]:before { .logo-icon(erlang); }
   [data-name$=".clj"]:before { .logo-icon(clojure); }
   [data-name$=".cljs"]:before { .logo-icon(cljs); }
-  [data-name$=".hx"]:before { .logo-icon(haxe); }
-  [data-name$=".haxe"]:before { .logo-icon(haxe); }
-  [data-name$=".hxsl"]:before { .logo-icon(haxe); }
+  [data-name="ionic.project"]:before { .logo-icon(ionic); }
+
+  [data-name$=".hx"]:before,
+  [data-name$=".hxsl"]:before,
+  [data-name$=".hxml"]:before { .logo-icon(haxe); }
+
   [data-name$=".lua"]:before { .logo-icon(lua); }
   [data-name$=".hs"]:before { .logo-icon(haskell); }
   [data-name$=".deb"]:before { .logo-icon(debian); }
@@ -109,13 +130,32 @@
   [data-name^="shipitfile"][data-name$=".js"]:before { .logo-icon(shipit); }
   [data-name^=".travis"]:before { .logo-icon(travis-ci); }
   [data-name^="circle.yml"]:before { .logo-icon(circle-ci); }
+  [data-name^="karma.conf"]:before { .logo-icon(karma); }
+  [data-name="jasmine.json"]:before { .logo-icon(jasmine); }
 
-  [data-name^=".npmignore"]:before { .logo-icon(npm); }
+  [data-name^=".eslintrc"]:before { .logo-icon(eslint); }
+
+  [data-name^=".htpasswd"]:before,
+  [data-name^=".htaccess"]:before,
+  [data-name^="apache"][data-name$=".conf"]:before,
+  [data-name="httpd.conf"]:before { .logo-icon(apache); }
+
+  [data-name$=".rs"]:before,
+  [data-name$=".rlib"]:before { .logo-icon(rust); }
+
+  [data-name$=".scala"]:before { .logo-icon(scala); }
+
+  span[data-name=".npmrc"]:before,
+  span[data-name="npm-debug.log"]:before,
+  span[data-name=".npmignore"]:before,
   span[data-name$="package.json"]:before { .logo-icon(npm); }
 
   span[data-name$="bower.json"]:before { .logo-icon(bower); }
   span[data-name$="composer.json"]:before { .logo-icon(composer); }
+
   span[data-name$="Gruntfile.js"]:before { .logo-icon(grunt); }
+  span[data-name$="gruntfile.js"]:before { .logo-icon(grunt); }
+
   span[data-name^="Gulpfile"]:before { .logo-icon(gulp); }
   span[data-name^="gulpfile"]:before { .logo-icon(gulp); }
 
