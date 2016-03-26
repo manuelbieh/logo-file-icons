@@ -1,9 +1,9 @@
 {
   "name": "logo-file-icons",
   "version": "1.0.0",
-  "description": "A short description of your package",
+  "description": "Add some nice logo icons to your files in Atom.",
   "author": "Manuel Bieh",
-  "keywords": [],
+  "keywords": ["logos", "icons", "fileicon"],
   "repository": "https://github.com/manuelbieh/logo-file-icons",
   "license": "MIT",
   "engines": {
