@@ -5,6 +5,13 @@ Add some nice logo icons to your files in Atom. Logos were taken from http://svg
 All logos are the property of their respective owners.
 
 ## Preview
-![Preview](https://raw.githubusercontent.com/manuelbieh/logo-file-icons/master/logo-file-icons.png)
+
+### Light theme
+![Preview light](https://raw.githubusercontent.com/manuelbieh/logo-file-icons/master/logo-file-icons.png)
+
+### Dark theme
+![Preview dark](https://raw.githubusercontent.com/manuelbieh/logo-file-icons/master/logo-file-icons-dark.png)
+
+
 
 Manuel Bieh – atom@manuelbieh.de
