@@ -1,15 +1,24 @@
-.logo-icon-defaults {
-  background-size: contain;
-  background-position: center;
-  background-repeat:  no-repeat;
-  content: "";
-  font-size: 1.25em;
-  // height: 1.75em;
-  height: 1.5rem;
-  vertical-align: -4px;
+.file-icon(@filename) {
+    background-size: contain;
+    background-position: center;
+    background-repeat:  no-repeat;
+    content: "";
+    font-size: 1.25em;
+    // height: 1.75em;
+    height: 1.5rem;
+    vertical-align: -4px;
+    background-image: url("atom://logo-file-icons/icons/@{filename}.svg");
 }
 
-.logo-icon(@filename) {
-  .logo-icon-defaults;
-  background-image: url("atom://logo-file-icons/icons/@{filename}.svg");
+.grammar-icon(@filename) {
+    background-size: contain;
+    background-position: center;
+    background-repeat:  no-repeat;
+    background-image: url("atom://logo-file-icons/icons/@{filename}.svg");
+    content: "";
+    display: block;
+    float: right;
+    height: 1.7em;
+    width: 1.7em;
+    margin-top: 0.15em;
 }
