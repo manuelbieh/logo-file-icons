@@ -155,6 +155,7 @@
   span[data-name=".npmrc"]:before,
   span[data-name="npm-debug.log"]:before,
   span[data-name=".npmignore"]:before,
+  div[data-name$="package.json"]:before,
   span[data-name$="package.json"]:before { .file-icon(npm); }
 
   span[data-name$="bower.json"]:before { .file-icon(bower); }
@@ -165,6 +166,8 @@
 
   span[data-name^="Gulpfile"]:before { .file-icon(gulp); }
   span[data-name^="gulpfile"]:before { .file-icon(gulp); }
+
+  span[data-name$=".pdf"]:before { .file-icon(pdf); }
 
 }
 
