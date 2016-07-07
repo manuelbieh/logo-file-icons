@@ -2,7 +2,30 @@
 //
 // See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
 // for a full listing of what's available.
-@import "filetypes";
+.file-icon(@filename) {
+    background-size: contain;
+    background-position: center;
+    background-repeat:  no-repeat;
+    content: "";
+    font-size: 1.25em;
+    // height: 1.75em;
+    height: 1.5rem;
+    vertical-align: -4px;
+    background-image: url("atom://logo-file-icons/icons/@{filename}.svg");
+}
+
+.grammar-icon(@filename) {
+    background-size: contain;
+    background-position: center;
+    background-repeat:  no-repeat;
+    background-image: url("atom://logo-file-icons/icons/@{filename}.svg");
+    content: "";
+    display: block;
+    float: right;
+    height: 1.7em;
+    width: 1.7em;
+    margin-top: 0.15em;
+}
 
 .icon-file-text::before,
 .icon-file-directory:before {
@@ -12,7 +35,7 @@
 
 .tab {
 
-  .title {
+  .title:not(.icon-tools) {
 
     &:before {
       content: "";
@@ -85,6 +108,7 @@
   [data-name$=".ts"]:before { .file-icon(typescript); }
 
   [data-name$=".coffee"]:before,
+  [data-name$=".cson"]:before,
   [data-name$=".cjsx"]:before { .file-icon(coffeescript); }
 
   [data-name$="Vagrantfile"]:before { .file-icon(vagrant); }
