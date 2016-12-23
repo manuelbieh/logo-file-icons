@@ -116,7 +116,6 @@
 
   [data-name$=".sls"]:before { .file-icon(saltstack); }
 
-
   [data-name^="Dockerfile"]:before,
   [data-name^=".dockerignore"]:before { .file-icon(docker); }
 
@@ -155,8 +154,6 @@
   [data-name^=".travis"]:before { .file-icon(travis-ci); }
   [data-name^=".gitlab"]:before { .file-icon(gitlab); }
 
-
-
   [data-name="circle.yml"]:before { .file-icon(circle-ci); }
   [data-name="karma.conf"]:before { .file-icon(karma); }
   [data-name="jasmine.json"]:before { .file-icon(jasmine); }
@@ -191,6 +188,10 @@
   [data-name^="gulpfile"]:before { .file-icon(gulp); }
 
   [data-name$=".pdf"]:before { .file-icon(pdf); }
+
+  [data-name$=".sequelizerc"]:before { .file-icon(sequelize); }
+  
+
 }
 
 .tree-view {
@@ -199,3 +200,47 @@
     [data-name$=".git"]:before { .file-icon(git); }
   }
 }
+
+// TODO: add an option to enable/disable icons in grammar list
+// .grammar-selector {
+//
+//     li[data-grammar^="Java"]:after { .grammar-icon(java); }
+//     li[data-grammar^="HTML"]:after { .grammar-icon(html5); }
+//     li[data-grammar^="Less"]:after { .grammar-icon(less); }
+//     li[data-grammar^="Sass"]:after,
+//     li[data-grammar^="SCSS"]:after { .grammar-icon(sass); }
+//     li[data-grammar*="Javascript"]:after,
+//     li[data-grammar*="JavaScript"]:after { .grammar-icon(javascript); }
+//     li[data-grammar^="Git "]:after { .grammar-icon(git); }
+//     li[data-grammar^="Ruby"]:after { .grammar-icon(ruby); }
+//     li[data-grammar^="Twig"]:after { .grammar-icon(twig); }
+//     li[data-grammar^="Python"]:after { .grammar-icon(python); }
+//     li[data-grammar^="Shell"]:after { .grammar-icon(bash); }
+//     li[data-grammar="Go"]:after,
+//     li[data-grammar^="Go "]:after { .grammar-icon(go); }
+//     li[data-grammar^="CoffeeScript"]:after { .grammar-icon(coffeescript); }
+//     li[data-grammar^="Perl"]:after { .grammar-icon(perl); }
+//     li[data-grammar^="JSON"]:after { .grammar-icon(json); }
+//     li[data-grammar*="Babel"]:after { .grammar-icon(babel); }
+//     li[data-grammar="editorconfig"]:after { .grammar-icon(editorconfig); }
+//     li[data-grammar^="Clojure"]:after { .grammar-icon(clojure); }
+//     li[data-grammar^="SQL"]:after { .grammar-icon(database); }
+//     li[data-grammar^="PHP"]:after { .grammar-icon(php); }
+//
+//     // GRAMMAR LIST:
+//     /*
+//         "Auto Detect", "Plain Text", "Babel ES6 JavaScript", "C", "C#", "C# Cake File", "C# Script File", "C++",
+//         "Clojure", "CoffeeScript", "CoffeeScript (Literate)", "CSS", "CSS (Twig)", "Diff", "editorconfig",
+//         "Git Commit Message", "Git Config", "Git Rebase Message", "GitHub Markdown", "Go", "Go Template",
+//         "HTML", "HTML (Go)", "HTML (Handlebars)", "HTML (Mustache)", "HTML (Rails)", "HTML (Ruby - ERB)",
+//         "HTML (Twig)", "Hyperlink", "Java", "Java Properties", "JavaScript", "JavaScript (Rails)", "Javascript (Twig)",
+//         "JavaServer Pages", "JSON", "JSON (Twig)", "JUnit Test Report", "Less", "Makefile", "NAnt Build File",
+//         "Objective-C", "Objective-C++", "Perl", "Perl 6", "PHP", "Property List (Old-Style)", "Property List (XML)",
+//         "Python", "Python Console", "Python Traceback", "Regular Expression Replacement (JavaScript)",
+//         "Regular Expressions (Babel)", "Regular Expressions (JavaScript)", "Regular Expressions (Python)",
+//         "Ruby", "Ruby on Rails", "Ruby on Rails (RJS)", "Sass", "SCSS", "Shell Script", "Shell Session",
+//         "SQL", "SQL (Mustache)", "SQL (Rails)", "Strings File", "TODO", "TOML", "Twig", "XML", "XML (Twig)",
+//         "XSL", "YAML", "YAML (Twig)"
+//     */
+//
+// }
