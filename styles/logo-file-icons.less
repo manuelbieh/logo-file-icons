@@ -65,6 +65,7 @@
   [data-name^=".gitmodules"]:before { .file-icon(git); }
 
   [data-name$=".php"]:before { .file-icon(php2); }
+  [data-name="requirements.txt"]:before,
   [data-name$=".py"]:before { .file-icon(python); }
   [data-name$=".cs"]:before { .file-icon(csharp); }
   [data-name$=".csproj"]:before { .file-icon(csharp); }
@@ -158,7 +159,8 @@
   [data-name="karma.conf"]:before { .file-icon(karma); }
   [data-name="jasmine.json"]:before { .file-icon(jasmine); }
 
-  [data-name^=".eslintrc"]:before { .file-icon(eslint); }
+  [data-name^=".eslintrc"]:before,
+  [data-name^=".eslintignore"]:before { .file-icon(eslint); }
 
   [data-name^=".htpasswd"]:before,
   [data-name^=".htaccess"]:before,
@@ -190,7 +192,13 @@
   [data-name$=".pdf"]:before { .file-icon(pdf); }
 
   [data-name$=".sequelizerc"]:before { .file-icon(sequelize); }
-  
+
+  [data-name^="brunch-config"]:before { .file-icon(brunch); }
+  [data-name$=".elm"]:before { .file-icon(elm); }
+
+  [data-name$=".swift"]:before { .file-icon(swift); }
+
+  [data-name="Procfile"]:before { .file-icon(heroku); }
 
 }
 
