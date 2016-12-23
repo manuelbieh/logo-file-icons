@@ -90,7 +90,6 @@
   [data-name$=".erb"]:before,
   [data-name$=".rb"]:before { .file-icon(ruby); }
 
-  [data-name$=".bowerrc"]:before { .file-icon(bower); }
   [data-name^=".bootstraprc"]:before { .file-icon(bootstrap); }
 
   [data-name^="webpack.config"]:before { .file-icon(webpack); }
@@ -179,13 +178,16 @@
   [data-name=".npmignore"]:before,
   [data-name="package.json"]:before { .file-icon(npm); }
 
+  [data-name$=".bowerrc"]:before,
   [data-name="bower.json"]:before { .file-icon(bower); }
+
+  [data-name="composer.lock"]:before,
   [data-name="composer.json"]:before { .file-icon(composer); }
 
-  [data-name^="Gruntfile"]:before { .file-icon(grunt); }
+  [data-name^="Gruntfile"]:before,
   [data-name^="gruntfile"]:before { .file-icon(grunt); }
 
-  [data-name^="Gulpfile"],
+  [data-name^="Gulpfile"]:before,
   [data-name^="gulpfile"]:before { .file-icon(gulp); }
 
   [data-name$=".pdf"]:before { .file-icon(pdf); }
