@@ -2,7 +2,11 @@
   "name": "logo-file-icons",
   "version": "1.5.0",
   "description": "Add some nice logo icons to your files in Atom.",
-  "author": "Manuel Bieh",
+  "author": "Manuel Bieh <atom@manuelbieh.de>",
+  "contributors":[{
+    "name": "Nguyen Long Nhat",
+    "email": "torn4dom4n@gmail.com"
+  }],
   "keywords": [
     "logos",
     "icons",
@@ -12,6 +16,5 @@
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
-  },
-  "dependencies": {}
+  }
 }
