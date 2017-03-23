@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="-17 42 315 338" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="pattern-0" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse" viewBox="0 0 100 100">
+      <path d="M 0 0 L 50 0 L 50 100 L 0 100 Z" style="fill: black;"/>
+    </pattern>
+    <linearGradient id="gradient-4" gradientUnits="userSpaceOnUse" x1="150" y1="70" x2="150" y2="390" gradientTransform="matrix(1, 0, 0, 1, 646.000061, -9.000005)">
+      <stop offset="0" style="stop-color: rgba(43, 127, 216, 1)"/>
+      <stop offset="1" style="stop-color: rgba(24, 77, 133, 1)"/>
+    </linearGradient>
+    <linearGradient id="gradient-5" gradientUnits="userSpaceOnUse" x1="125.375" y1="-0.078" x2="125.375" y2="437.641" spreadMethod="pad" gradientTransform="matrix(0.86627, 0, 0, 1.029527, 743.391408, -0.919567)">
+      <stop offset="0" style="stop-color: rgba(255, 255, 255, 1)"/>
+      <stop offset="1" style="stop-color: rgba(204, 204, 204, 1)"/>
+    </linearGradient>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, -658.509277, -13.491916)">
+    <path d="M 646 61 L 946 61 L 946 381 L 646 381 L 646 61 Z" style="stroke: rgb(0, 0, 0); fill: url(#gradient-4);"/>
+    <path d="M 808.337 241.059 L 774.032 241.059 L 774.032 365.22 L 741.287 365.22 C 734.219 365.22 729.593 363.861 727.41 361.143 C 725.227 358.425 724.135 352.743 724.135 344.094 L 724.135 97.255 L 762.805 97.255 C 766.132 97.255 768.835 98.614 770.914 101.332 C 772.993 104.05 774.032 107.633 774.032 112.08 L 774.032 205.85 L 808.337 205.85 L 808.337 241.059 M 820.811 97.255 L 853.556 97.255 C 860.625 97.255 865.25 98.614 867.433 101.332 C 869.616 104.05 870.708 109.733 870.708 118.381 L 870.708 365.22 L 832.038 365.22 C 828.711 365.22 826.008 363.861 823.929 361.143 C 821.85 358.425 820.811 354.843 820.811 350.395 L 820.811 97.255 Z" style="fill: url(#gradient-5); stroke: rgb(0, 0, 0); text-transform: capitalize; white-space: pre;"/>
+  </g>
+</svg>
