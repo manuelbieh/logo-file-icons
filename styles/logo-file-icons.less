@@ -41,6 +41,17 @@
     }
 }
 
+atom-workspace[class*="dark"] {
+    .tab,
+    .fuzzy-finder .list-group,
+    .tree-view .file {
+        [data-name$=".md"]:before { .file-icon(markdown-light); }
+        [data-name$=".rs"]:before,
+        [data-name$=".rlib"]:before { .file-icon(rust-light); }
+        [data-name$=".styl"]:before { .file-icon(stylus-light); }
+    }
+}
+
 .tab,
 .fuzzy-finder .list-group,
 .tree-view .file {
