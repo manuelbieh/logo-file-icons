@@ -25,20 +25,17 @@
 .icon-file-text::before,
 .icon-file-directory:before {
     min-width: 16px;
-    width: 1em;
+    // width: 1em;
 }
 
-.tab {
-    .title:not(.icon-tools) {
-        &:before {
-            content: "";
-            display: inline-block;
-            width: 16px;
-            height: 16px !important;
-            vertical-align: -4px;
-            margin-right: 4px;
-        }
-    }
+ul.tab-bar .tab .title:not(.icon-tools):before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px !important;
+    vertical-align: -3px;
+    margin-right: 4px;
+    min-width: 16px;
 }
 
 atom-workspace[class*="dark"] {
