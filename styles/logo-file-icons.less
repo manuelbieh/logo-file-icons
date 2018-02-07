@@ -167,7 +167,7 @@ atom-workspace[class*="dark"] {
     [data-name^=".gitlab"]:before { .file-icon(gitlab); }
 
     [data-name="circle.yml"]:before { .file-icon(circle-ci); }
-    [data-name="karma.conf"]:before { .file-icon(karma); }
+    [data-name^="karma.conf"]:before { .file-icon(karma); }
     [data-name="jasmine.json"]:before { .file-icon(jasmine); }
 
     [data-name^=".eslintrc"]:before,
@@ -224,6 +224,17 @@ atom-workspace[class*="dark"] {
 
     [data-name$=".exs"]:before { .file-icon(elixir); }
 
+    [data-name^=".prettierrc"]:before,
+    [data-name^=".prettierignore"]:before { .file-icon(prettier); }
+
+    [data-name="jest.config.js"]:before { .file-icon(jest); }
+
+    [data-name$=".kt"]:before,
+    [data-name$=".kts"]:before { .file-icon(kotlin); }
+
+    [data-name$=".wasm"]:before,
+    [data-name$=".wast"]:before { .file-icon(webassembly); }
+
 }
 
 .tree-view {
@@ -240,6 +251,9 @@ atom-workspace[class*="dark"] {
         [data-name^="gruntfile"]:before { .file-icon(grunt); }
 
         [data-name^="webpack.config"]:before { .file-icon(webpack); }
+
+        [data-name=".circleci"]:before { .file-icon(circle-ci); }
+        [data-name^=".gitlab"]:before { .file-icon(gitlab); }
 
     }
 
