@@ -46,6 +46,10 @@ atom-workspace[class*="dark"] {
         [data-name$=".rs"]:before,
         [data-name$=".rlib"]:before { .file-icon(rust-light); }
         [data-name$=".styl"]:before { .file-icon(stylus-light); }
+
+        [data-name$="LICENSE"]:before,
+        [data-name$="COPYING"]:before { .file-icon(copyright-light); }
+
     }
 }
 
@@ -235,6 +239,12 @@ atom-workspace[class*="dark"] {
 
     [data-name$=".wasm"]:before,
     [data-name$=".wast"]:before { .file-icon(webassembly); }
+
+    [data-name$=".vala"]:before,
+    [data-name$=".vapi"]:before { .file-icon(vala); }
+
+    [data-name$="LICENSE"]:before,
+    [data-name$="COPYING"]:before { .file-icon(copyright); }
 
 }
 
